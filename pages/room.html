@@ -1,0 +1,12 @@
+<section>
+    <div class="room-container">
+        <h1 class="title">Bloc Chat</h1>
+
+        <table>
+            <tr ng-repeat="room in room.rooms track by $index">
+                <td class="link">{{room.$value}}</td>
+            </tr>
+        </table>
+        <!-- <li>{{room.value}}</li>-->
+    </div>
+</section>
