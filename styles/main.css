@@ -1,5 +1,5 @@
 body {
-    background-color:beige;
+    background-color: beige;
 }
 
 .room-container {
@@ -18,11 +18,7 @@ body {
 }
 
 .room-container .link {
-    /*padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 117px;*/
-    width: 190px;
+    width: 200px;
     margin-right: 10px;
     float: left;
     padding-left: 10px;
@@ -31,6 +27,11 @@ body {
 .room-container .link:hover {
     color:dimgray ;
     background-color: beige;
+}
+
+.room-container .new-room {
+    color: dimgray;
+    margin: 5px;
 }
 
 .room-container .title {
