@@ -1,0 +1,11 @@
+<div class="room-container">
+    <h1 class="title">Bloc Chat Room</h1>
+    <div class="new-room">
+        <button type="button" ng-click="home.open()">New Room</button>
+    </div>
+    <table ng-repeat="room in home.rooms">
+        <tr class="link">
+            <td>{{room.name}}</td>
+        </tr>
+    </table>
+</div>
