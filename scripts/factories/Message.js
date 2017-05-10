@@ -6,13 +6,13 @@
         return {
             all: messages,
             getByRoomId: function(roomId) {
-                var Messag = [];
+                var Message = [];
                 ref.orderByChild('roomId').equalTo(roomId).on('value', function(snapshot) {
                     snapshot.forEach(function(childSnapshot) {
-                         Messag.push(childSnapshot.val());
+                         Message.push(childSnapshot.val());
                     });
                 });
-                return Messag;
+                return Message;
             }
         };
     }

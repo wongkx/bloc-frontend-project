@@ -1,5 +1,5 @@
 (function() {
-    function ModalCtrl($uibModalInstance, Room) {
+    function ModalCtrl($uibModalInstance, Room, $cookies) {
         var modal = this;
        
         modal.cancel = function () {
@@ -11,8 +11,13 @@
             $uibModalInstance.close();
         }; 
         
+        modal.createUser = function () {
+            $cookies.put('blocChatCurrentUser', modal.newUser.username);
+            $uibModalInstance.close();     
+        }
+        
     }
     angular
         .module('blocChat')
-        .controller('ModalCtrl',['$uibModalInstance','Room', ModalCtrl])
+        .controller('ModalCtrl',['$uibModalInstance','Room', '$cookies', ModalCtrl])
 })();
