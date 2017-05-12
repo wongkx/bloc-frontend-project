@@ -1,5 +1,8 @@
 <div class="room-container">
     <h1 class="title">Bloc Chat</h1>
+    <div ng-show="home.hasUser">
+        <p>Welcome{{', '+home.getUserName()}}!</p>
+    </div>
     <div class="new-room">
         <button type="button" ng-click="home.open()">New Room</button>
     </div>
