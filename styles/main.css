@@ -10,7 +10,7 @@ body {
     font-size: 18px;
     top: 0;
     right: auto;
-    left: 0;
+    padding-left: 5px;
     float: left;
     bottom: 0;
     padding-top: 5px;
@@ -37,11 +37,11 @@ body {
 .room-container .title {
     font-weight: 200;
     padding-left: 10px;
-    margin-bottom: 40px;
     font-family: sans-serif;
     border-bottom: 1px solid;
     border-bottom-width: thick;
     border-bottom-color: beige;
+    margin-bottom: 100px; 
 }
 
 .message-container {
@@ -51,7 +51,7 @@ body {
 
 .message-container .room-title {
     margin: 40px;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .message-container .message {
@@ -59,11 +59,32 @@ body {
     padding-right: 30px;
     padding-top: 10px;
     border-top-style: solid;
-    border-top-color: black;
-    font-size: 2rem;
+    border-top-color:lightgrey;
+    font-size: 14px;
+}
+
+.message-container .welcome {
+    float: right;
+}
+
+.message-container .signout {
+    color:black;
+    cursor: pointer;
+    font-size:12px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 .sentAt {
     float: right;
-    /*text-align: right;*/
+    font-size: 1rem;
+    color: lightgrey;
+}
+
+.message-container .message-input {
+    position:fixed;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    height: auto;
 }
