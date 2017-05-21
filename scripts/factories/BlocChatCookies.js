@@ -7,8 +7,8 @@
         if (!currentUser || currentUser === '') {
             var userModal = $uibModal.open({
               size: 'sm',
-              templateUrl: '/pages/createUser.html',
-              controller: 'ModalCtrl as modal',
+              templateUrl: '/pages/login.html',
+              controller: 'AuthCtrl as auth',
                 backdrop: 'static',
                 keyboard: false
           });

@@ -13,7 +13,7 @@
 </div>
 <div class="message-container">
     <div class="welcome" ng-show="home.hasUser">
-        Welcome{{', '+home.getUserName()}}!
+        {{'Welcome, '+home.getUserName()}}!
         <u><a class="signout" ng-click="home.removeUser()">Sign out</a></u>
     </div>
     <div ng-show="home.roomClicked">

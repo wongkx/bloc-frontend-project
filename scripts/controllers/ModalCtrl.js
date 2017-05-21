@@ -11,11 +11,6 @@
             $uibModalInstance.close();
         }; 
         
-        modal.createUser = function () {
-            $cookies.put('blocChatCurrentUser', modal.newUser.username);
-            $uibModalInstance.close();     
-        }
-        
     }
     angular
         .module('blocChat')
